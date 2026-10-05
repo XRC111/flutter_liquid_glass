@@ -1,0 +1,25 @@
+name: flutter_liquid_glass
+description: "A Flutter Liquid Glass widget library with refraction, RGB dispersion, Fresnel edge highlights and automatic quality fallback (Android API 24-35)."
+version: 0.1.0
+repository: https://github.com/XRC111/flutter_liquid_glass
+homepage: https://github.com/XRC111/flutter_liquid_glass
+
+environment:
+  sdk: ^3.5.4
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  # 包内着色器：依赖方通过 packages/flutter_liquid_glass/shaders/... 加载
+  shaders:
+    - shaders/liquid_glass.frag
+    - shaders/blur_horizontal.frag
+    - shaders/blur_vertical.frag
